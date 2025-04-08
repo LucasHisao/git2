@@ -1,12 +1,64 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>Testing</p>
+        
+        <h1>Formulário de Candidatura</h1>
+            <link rel="stylesheet" href="./style.css">
+            <br>
+            
+            <form>
+                
+                <label for="name">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <br> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br> <br>
+
+                <label for="cargo de tecnologia">Cargo de Tecnologia</label>
+                <select id="cargo de tecnologia" name="cargo de tecnologia">
+                    <option value="pessoa desenvolvedora">Pessoa Desenvolvedora</option>
+                    <option value="analista de sistemas">Analista de Sistemas</option>
+                    <option value="administrador(a) de banco de dados">Adminstrador(a) de Banco de Dados</option>
+                    <option value=""></option>
+                </select>
+
+                <br><br>
+
+
+                <label for="genero">Gênero:</label>
+                    <input type="radio" name="genero" id="Masculino">
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" name="genero" id="Feminino">
+                    <label for="Feminino">Feminino</label>
+                    <input type="radio" name="genero" id="Outro">
+                    <label for="Outro">Outro</label>
+
+
+                <br><br>
+
+                <label for="Unidade de interesse">Unidade de interesse:</label>
+                    <label for="fortaleza">Fortaleza</label>
+                    <input type="checkbox" name="fortaleza" id="fortaleza" value="fortaleza">
+                    <label for="caucaia">Caucaia</label>
+                    <input type="checkbox" name="caucaia" id="caucaia" value="caucaia">
+                    <label for="eusebio">Eusébio</label>
+                    <input type="checkbox" name="eusebio" id="eusebio" value="eusebio">
+                    <br><br>
+
+                <label for="sobre">Fale mais sobre você:</label> <br>
+                    <textarea name="Fale mais sobre você" rows="3" cols="50"></textarea>
+                    
+                    <br><br>
+                <label for="Enviar"></label>
+                    <input type="submit" value="Enviar">
+            </form>
+            
     </body>
     </html>
